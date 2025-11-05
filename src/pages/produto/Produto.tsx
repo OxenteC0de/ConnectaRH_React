@@ -1,8 +1,11 @@
+ import arquivosImg from "../../assets/arquivos.png";
+import relatorioImg from "../../assets/Relatorio.png";
+
 function Produto() {
   return (
     <>
       <section className="bg-gradient-to-b from-purple-800 to-violet-950 text-white min-h-screen py-16 px-6">
-        <div className="container mx-auto grid md:grid-cols-2 items-center  min-h-screen px-8">
+        <div className="container mx-auto grid md:grid-cols-2 items-center min-h-screen px-8">
           {/* Bloco 1 - Texto + imagem direita */}
           <div className="flex flex-col justify-center text-center md:text-left space-y-6">
             <h2 className="text-5xl font-bold">Nosso sistema</h2>
@@ -15,7 +18,7 @@ function Produto() {
 
           <div className="flex justify-center">
             <img
-              src="src/assets/arquivos.png"
+              src={arquivosImg}
               alt="Ilustração de arquivos"
               className="w-full h-auto max-w-md object-contain"
             />
@@ -24,13 +27,13 @@ function Produto() {
           {/* Bloco 2 - imagem esquerda + texto */}
           <div className="flex justify-center order-3 md:order-none">
             <img
-              src="src/assets/Relatorio.png"
+              src={relatorioImg}
               alt="Ilustração de relatório"
               className="w-full h-auto max-w-md object-contain"
             />
           </div>
 
-          <div className="flex flex-col justify-center text-center md:text-left space-y-6 pl8">
+          <div className="flex flex-col justify-center text-center md:text-left space-y-6 pl-8">
             <h2 className="text-5xl font-bold">Gerenciamento</h2>
             <p className="text-xl leading-relaxed text-gray-200">
               Gerencie com agilidade as informações dos colaboradores. Mantenha
