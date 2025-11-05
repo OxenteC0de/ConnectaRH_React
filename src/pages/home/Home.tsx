@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ilustracaoRH from "../../assets/Resume-amico.png";
 
 function Home() {
   return (
@@ -23,7 +24,7 @@ function Home() {
 
         <div className="flex justify-center">
           <img
-            src="https://cdn.discordapp.com/attachments/1420729409983479919/1435344134536696009/Resume-amico_1.png?ex=690b9fe5&is=690a4e65&hm=f8b86c87b314e75bd821a6554952f17dcc964797c1c6f6326d0397e41ecb3368"
+            src={ilustracaoRH}
             alt="Ilustração ConnectaRH"
             className="w-4/5 md:w-3/4 drop-shadow-lg"
           />
