@@ -1,17 +1,53 @@
 function Sobre() {
   const devs = [
-    { id: 1, nome: "David Barbosa", cargo: "Frontend", imagem: "./public/david.jpeg" },
-    { id: 2, nome: "Dilvani Estrela", cargo: "Frontend", imagem: "./public/dilvani.jpeg" },
-    { id: 3, nome: "Karine Santos", cargo: "Frontend", imagem: "./public/karine.jpeg" },
-    { id: 4, nome: "Janaina Bezerra", cargo: "Frontend", imagem: "./public/janaina.jpeg" },
-    { id: 5, nome: "Tauane Soares", cargo: "Full Stack", imagem: "./public/tauane.jpeg" },
-    { id: 6, nome: "William Almeida", cargo: "DevOps", imagem: "" },
-    { id: 7, nome: "Winnie Santana", cargo: "Frontend", imagem: "./public/winne.jpeg" },
+    {
+      id: 1,
+      nome: "David Barbosa",
+      cargo: "Frontend",
+      imagem: "./public/david.jpeg",
+    },
+    {
+      id: 2,
+      nome: "Dilvani Estrela",
+      cargo: "Frontend",
+      imagem: "./public/dilvani.jpeg",
+    },
+    {
+      id: 3,
+      nome: "Karine Santos",
+      cargo: "Frontend",
+      imagem: "./public/karine.jpeg",
+    },
+    {
+      id: 4,
+      nome: "Janaina Bezerra",
+      cargo: "Frontend",
+      imagem: "./public/janaina.jpeg",
+    },
+    {
+      id: 5,
+      nome: "Tauane Soares",
+      cargo: "Full Stack",
+      imagem: "./public/tauane.jpeg",
+    },
+    {
+      id: 6,
+      nome: "William Almeida",
+      cargo: "DevOps",
+      imagem:
+        "https://media.licdn.com/dms/image/v2/D4E03AQElydPuHdDSfg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1682979178325?e=1764201600&v=beta&t=TyfIQLfKp25eTHeo9rkneLFuEm0gO-Mw9x0FHcL0qpo",
+    },
+    {
+      id: 7,
+      nome: "Winnie Santana",
+      cargo: "Frontend",
+      imagem: "./public/winne.jpeg",
+    },
   ];
 
   return (
 
-    <section className="bg-gradient-to-b from-purple-800 to-violet-950 text-white py-16 px-6">
+    <section className="bg-gradient-to-b from-purple-800 to-violet-950 text-white min-h-screen py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
