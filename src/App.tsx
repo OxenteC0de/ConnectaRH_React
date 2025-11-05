@@ -24,4 +24,3 @@ function App() { //Por que não consigo comentar dentro da função? De qualquer
   )
 }
 
-export default App
