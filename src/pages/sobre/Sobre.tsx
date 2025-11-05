@@ -1,28 +1,63 @@
 function Sobre() {
   const devs = [
-    { id: 1, nome: "David Barbosa", cargo: "Desenvolvedor",
+    {
+      id: 1,
+      Imagem: "./public/david.jpeg",
+      nome: "David Barbosa",
+      cargo: "Desenvolvedor",
       github: "https://github.com/DavidBaarbosa",
-      linkedin: "https://www.linkedin.com/in/dev-davidbarbosa/"},
-    { id: 2, nome: "Dilvani Estrela ", cargo: "Desenvolvedora e Documentação",
+      linkedin: "https://www.linkedin.com/in/dev-davidbarbosa/",
+    },
+    {
+      id: 2,
+      Imagem: "./public/dilvani.jpeg",
+      nome: "Dilvani Estrela",
+      cargo: "Desenvolvedora e Documentação",
       github: "https://github.com/Dilvaniestrela",
-      linkedin: "https://www.linkedin.com/in/dilvaniestrela/"},
-    { id: 3, nome: "Janaína Bezerra", cargo: "Desenvolvedora",
+      linkedin: "https://www.linkedin.com/in/dilvaniestrela/",
+    },
+    {
+      id: 3,
+      Imagem: "./public/janaina.jpeg",
+      nome: "Janaína Bezerra",
+      cargo: "Desenvolvedora",
       github: "https://github.com/Janainabezerraas",
-      linkedin: "https://www.linkedin.com/in/janainabezerraas/"},
-    { id: 4, nome: "Karine Santos", cargo: "Desenvolvedora",
+      linkedin: "https://www.linkedin.com/in/janainabezerraas/",
+    },
+    {
+      id: 4,
+      Imagem: "./public/karine.jpeg",
+      nome: "Karine Santos",
+      cargo: "Desenvolvedora",
       github: "https://github.com/k4rin",
-      linkedin: "https://www.linkedin.com/in/karine-cristine-lopes-dos-santos/"},
-    { id: 5, nome: "Tauane Soares", cargo: "Desenvolvedora",
+      linkedin: "https://www.linkedin.com/in/karine-cristine-lopes-dos-santos/",
+    },
+    {
+      id: 5,
+      Imagem: "./public/tauane.jpeg",
+      nome: "Tauane Soares",
+      cargo: "Desenvolvedora",
       github: "https://github.com/tauanesoares",
-      linkedin: "https://www.linkedin.com/in/tauanews/"},
-    { id: 6, nome: "William Almeida", cargo: "Scrum Master (líder) e Desenvolvedor",
+      linkedin: "https://www.linkedin.com/in/tauanews/",
+    },
+    {
+      id: 6,
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/D4E03AQElydPuHdDSfg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1682979178325?e=1764201600&v=beta&t=ec_d3CEzla-WTsC0I4wQh0EqvPAyERPYUNmW75tGJ4A",
+      nome: "William Almeida",
+      cargo: "Scrum Master (líder) e Desenvolvedor",
       github: "https://github.com/willmartinsss",
-      linkedin: "https://www.linkedin.com/in/william-m-almeida/"},
-    { id: 7, nome: "Winnie Sant’Ana", cargo: "Desenvolvedora",
+      linkedin: "https://www.linkedin.com/in/william-m-almeida/",
+    },
+    {
+      id: 7,
+      Imagem: "./public/winne.jpeg",
+      nome: "Winnie Sant'Ana",
+      cargo: "Desenvolvedora",
       github: "https://github.com/wssant",
-      linkedin: "https://www.linkedin.com/in/winniesantana/"},
+      linkedin: "https://www.linkedin.com/in/winniesantana/",
+    },
   ];
-
 
   return (
     <section className="bg-gradient-to-b from-purple-800 to-violet-950 text-white py-16 px-6">
@@ -43,28 +78,36 @@ function Sobre() {
               key={dev.id}
               className="bg-purple-800 rounded-lg p-6 text-center hover:bg-purple-700 transition-colors"
             >
-              {/* Avatar Placeholder */}
-              <div className="w-24 h-24 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-3xl font-bold">👨‍💻</span>
+              {/* Avatar */}
+              <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                <img
+                  src={dev.Imagem}
+                  alt={`Foto de ${dev.nome}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Info */}
               <h3 className="text-xl font-semibold mb-2">{dev.nome}</h3>
               <p className="text-purple-200 text-sm mb-4">{dev.cargo}</p>
 
-              {/* Links Sociais (Opcional) */}
+              {/* Links Sociais */}
               <div className="flex justify-center gap-3">
                 <a
                   href={dev.github}
-                  target="_blank" // Abre o link em nova aba
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-purple-300 hover:text-white transition-colors"
-                > GitHub
+                >
+                  GitHub
                 </a>
                 <a
                   href={dev.linkedin}
-                  target="_blank" // Abre o link em nova aba
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-purple-300 hover:text-white transition-colors"
-                > LinkedIn
+                >
+                  LinkedIn
                 </a>
               </div>
             </div>
