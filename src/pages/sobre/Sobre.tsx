@@ -23,6 +23,7 @@ function Sobre() {
       linkedin: "https://www.linkedin.com/in/winniesantana/"},
   ];
 
+
   return (
     <section className="bg-gradient-to-b from-purple-800 to-violet-950 text-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
