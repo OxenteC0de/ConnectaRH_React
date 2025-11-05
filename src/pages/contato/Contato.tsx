@@ -12,7 +12,7 @@ function Contato() {
 
   const [enviado, setEnviado] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -20,7 +20,7 @@ function Contato() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     console.log("Dados enviados:", formData);
     setEnviado(true);
@@ -124,7 +124,7 @@ function Contato() {
                 value={formData.mensagem}
                 onChange={handleChange}
                 required
-                rows="5"
+                rows={5}
                 className="w-full px-4 py-2 rounded-lg bg-purple-700 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
                 placeholder="Sua mensagem aqui..."
               />
