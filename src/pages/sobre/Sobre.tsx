@@ -1,12 +1,26 @@
 function Sobre() {
   const devs = [
-    { id: 1, nome: "Dev 1", cargo: "Frontend" },
-    { id: 2, nome: "Dev 2", cargo: "Backend" },
-    { id: 3, nome: "Dev 3", cargo: "Full Stack" },
-    { id: 4, nome: "Dev 4", cargo: "DevOps" },
-    { id: 5, nome: "Dev 5", cargo: "Frontend" },
-    { id: 6, nome: "Dev 6", cargo: "Backend" },
-    { id: 7, nome: "Dev 7", cargo: "Design" },
+    { id: 1, nome: "David Barbosa", cargo: "Frontend",
+      github: "https://github.com/DavidBaarbosa",
+      linkedin: "https://www.linkedin.com/in/dev-davidbarbosa/"},
+    { id: 2, nome: "Dilvani Estrela ", cargo: "Backend",
+      github: "https://github.com/Dilvaniestrela",
+      linkedin: "https://www.linkedin.com/in/dilvaniestrela/"},
+    { id: 3, nome: "Janaína Bezerra", cargo: "Full Stack",
+      github: "https://github.com/Janainabezerraas",
+      linkedin: "https://www.linkedin.com/in/janainabezerraas/"},
+    { id: 4, nome: "Karine Santos", cargo: "DevOps",
+      github: "https://github.com/k4rin",
+      linkedin: "https://www.linkedin.com/in/karine-cristine-lopes-dos-santos/"},
+    { id: 5, nome: "Tauane Soares", cargo: "Frontend",
+      github: "https://github.com/tauanesoares",
+      linkedin: "https://www.linkedin.com/in/tauanews/"},
+    { id: 6, nome: "William Almeida", cargo: "Backend",
+      github: "https://github.com/willmartinsss",
+      linkedin: "https://www.linkedin.com/in/william-m-almeida/"},
+    { id: 7, nome: "Winnie Sant’Ana", cargo: "Design",
+      github: "https://github.com/wssant",
+      linkedin: "https://www.linkedin.com/in/winniesantana/"},
   ];
 
   return (
@@ -39,12 +53,18 @@ function Sobre() {
 
               {/* Links Sociais (Opcional) */}
               <div className="flex justify-center gap-3">
-                <button className="text-purple-300 hover:text-white transition-colors">
-                  GitHub
-                </button>
-                <button className="text-purple-300 hover:text-white transition-colors">
-                  LinkedIn
-                </button>
+                <a
+                  href={dev.github}
+                  target="_blank" // Abre o link em nova aba
+                  className="text-purple-300 hover:text-white transition-colors"
+                > GitHub
+                </a>
+                <a
+                  href={dev.linkedin}
+                  target="_blank" // Abre o link em nova aba
+                  className="text-purple-300 hover:text-white transition-colors"
+                > LinkedIn
+                </a>
               </div>
             </div>
           ))}
