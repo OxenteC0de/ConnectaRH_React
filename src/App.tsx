@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Footer from './components/footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Home from './pages/home/Home'
@@ -13,6 +13,7 @@ function App() { //Por que não consigo comentar dentro da função? De qualquer
         <Navbar />
         <div className="min-h-[80vh]">
           <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/produto" element={<Produto />} />

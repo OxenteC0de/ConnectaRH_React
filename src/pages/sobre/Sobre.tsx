@@ -2,7 +2,7 @@ function Sobre() {
   const devs = [
     {
       id: 1,
-      Imagem: "./public/david.jpeg",
+      Imagem: "https://avatars.githubusercontent.com/u/225912032?v=4",
       nome: "David Barbosa",
       cargo: "Desenvolvedor",
       github: "https://github.com/DavidBaarbosa",
@@ -10,7 +10,8 @@ function Sobre() {
     },
     {
       id: 2,
-      Imagem: "./public/dilvani.jpeg",
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/C5603AQFtV3U91SUD1g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1558430134472?e=1764201600&v=beta&t=r5OmHwxR07_RnTQaWEMhl60RBlXB4M-3A8B0AqNeiyM",
       nome: "Dilvani Estrela",
       cargo: "Desenvolvedora e Documentação",
       github: "https://github.com/Dilvaniestrela",
@@ -18,7 +19,8 @@ function Sobre() {
     },
     {
       id: 3,
-      Imagem: "./public/janaina.jpeg",
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/D4D03AQHTbI6wIsZ70w/profile-displayphoto-scale_200_200/B4DZkdaZAWH0AY-/0/1757135084211?e=1764201600&v=beta&t=y33JXeXP7lT4A9s5Qv5vcmudcK2UZv2LmuC015teT9Q",
       nome: "Janaína Bezerra",
       cargo: "Desenvolvedora",
       github: "https://github.com/Janainabezerraas",
@@ -26,7 +28,8 @@ function Sobre() {
     },
     {
       id: 4,
-      Imagem: "./public/karine.jpeg",
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/D4D03AQGggZwsYPiMXA/profile-displayphoto-scale_200_200/B4DZg_AvjIHsAc-/0/1753403816875?e=1764201600&v=beta&t=chbJxO_NM_mGy7L1PlQSzT5Z-tnFmFsg8Qi5fDVJb6M",
       nome: "Karine Santos",
       cargo: "Desenvolvedora",
       github: "https://github.com/k4rin",
@@ -34,7 +37,8 @@ function Sobre() {
     },
     {
       id: 5,
-      Imagem: "./public/tauane.jpeg",
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/D4D03AQGZPzL_SGV5sA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693271331623?e=1764201600&v=beta&t=_iVe96NiwIc3n3OEihpsNt6Ro-w5wLEDpoQjclAn9v4",
       nome: "Tauane Soares",
       cargo: "Desenvolvedora",
       github: "https://github.com/tauanesoares",
@@ -51,7 +55,8 @@ function Sobre() {
     },
     {
       id: 7,
-      Imagem: "./public/winne.jpeg",
+      Imagem:
+        "https://media.licdn.com/dms/image/v2/D4D35AQGspDdI26Y0kQ/profile-framedphoto-shrink_200_200/B4DZoRFerSGwAY-/0/1761223240652?e=1762977600&v=beta&t=i4XB4QkflTFtm-OqrPmqT9yiFGWrtRt-MUQD8ifudng",
       nome: "Winnie Sant'Ana",
       cargo: "Desenvolvedora",
       github: "https://github.com/wssant",
